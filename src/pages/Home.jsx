@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Input, Button, Grid } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
+import InDevFile                                 from "../components/Proto-CouncilMemberTile"
+
 
 const Layout = styled(Container)({
   minHeight: "100vh"
@@ -40,6 +42,7 @@ const HomePage = props => {
   return (
     <Layout>
       <ContentContainer>
+        <InDevFile/>
         <StyledGrid verticalAlign="middle" centered>
           <Grid.Row>
             <h1>Search City Council Transcripts</h1>
